@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Pivot Title="" >
             <PivotItem Header="Logs">
-                <TextBox Margin="10,10,0,0" TextWrapping="Wrap" Text="ログ" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsReadOnly="True"/>
+                <TextBox x:Name="txtLog" Margin="10,10,0,0" TextWrapping="Wrap" Text="ログ" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" IsReadOnly="True"/>
             </PivotItem>
             <PivotItem Header="単語List(VC)">
                 <TextBox Margin="10,10,0,0" TextWrapping="Wrap" Text="テスト|テストちゅう" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
@@ -21,18 +21,18 @@
             <PivotItem Header="Settings" >
                 <Grid Height="405" Margin="10,10,0,0" VerticalAlignment="Top">
                     <TextBlock Margin="10,10,0,0" TextWrapping="Wrap" Text="Input Device" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Stretch" Margin="10,35,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbInputDevice" HorizontalAlignment="Stretch" Margin="10,35,0,0" VerticalAlignment="Top"/>
                     <TextBlock Margin="10,74,0,0" TextWrapping="Wrap" Text="Output Device" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Stretch" Margin="10,99,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbOutputDevice" HorizontalAlignment="Stretch" Margin="10,99,0,0" VerticalAlignment="Top"/>
                     <TextBlock Margin="10,142,0,0" TextWrapping="Wrap" Text="Speech Recognition API" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Stretch" Margin="10,167,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbRecogAPI" HorizontalAlignment="Stretch" Margin="10,167,0,0" VerticalAlignment="Top"/>
                     <TextBlock Margin="10,209,0,0" TextWrapping="Wrap" Text="Speech API" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Stretch" Margin="10,234,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbSpeechAPI" HorizontalAlignment="Stretch" Margin="10,234,0,0" VerticalAlignment="Top"/>
                     <TextBlock Margin="10,282,0,0" TextWrapping="Wrap" Text="MS Speech Option" VerticalAlignment="Top"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top" Width="118"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="158,307,0,0" VerticalAlignment="Top" Width="118"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="318,307,0,0" VerticalAlignment="Top" Width="118"/>
-                    <ComboBox HorizontalAlignment="Left" Margin="468,307,0,0" VerticalAlignment="Top" Width="118"/>
+                    <ComboBox x:Name="cmbMsVolume" HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top" Width="118"/>
+                    <ComboBox x:Name="cmbMsPitch" HorizontalAlignment="Left" Margin="158,307,0,0" VerticalAlignment="Top" Width="118"/>
+                    <ComboBox x:Name="cmbMsEmphasis" HorizontalAlignment="Left" Margin="318,307,0,0" VerticalAlignment="Top" Width="118"/>
+                    <ComboBox x:Name="cmbMsRate" HorizontalAlignment="Left" Margin="468,307,0,0" VerticalAlignment="Top" Width="118"/>
                 </Grid>
             </PivotItem>
         </Pivot>
